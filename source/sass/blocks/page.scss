@@ -1,0 +1,17 @@
+.page {
+  min-width: 320px;
+  height: 100%;
+  font-family: $font-main;
+  font-size: 16px;
+  line-height: 22px;
+  scroll-behavior: smooth;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  color: $text-gray;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
