@@ -1,0 +1,138 @@
+.page-footer h2 {
+  text-transform: uppercase;
+  font-family: $font-title;
+  color: $bg-black;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  margin-bottom: 29px;
+}
+
+.page-footer a {
+  color: $link-gray;
+}
+
+.page-footer__wrapper {
+  margin: 0 auto;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 1445px;
+  min-height: 320px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr min-content;
+}
+
+// page-footer__logo
+
+.page-footer__logo {
+  margin-top: 66px;
+  padding-left: 13px;
+  max-height: 52px;
+}
+
+.page-footer__logo p {
+  color: $dark-gray;
+  padding-top: 5px;
+}
+
+// page-footer__social-list
+
+.page-footer__social-list {
+  margin: 0;
+  padding: 0;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  list-style: none;
+  display: flex;
+}
+
+// page-footer__site-sections
+
+.page-footer__site-sections {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  margin-top: 56px;
+  margin-right: 20px;
+}
+
+.page-footer__site-sections h2 {
+  margin: 0;
+  padding-bottom: 25px;
+  padding-top: 10px;
+}
+
+.page-footer__site-sections-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 124px;
+}
+
+.page-footer__site-sections-item {
+
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.page-footer__site-sections-item a {
+  display: block;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+// page-footer__contacts
+
+.page-footer__contacts {
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+  justify-self: end;
+
+  margin-top: 56px;
+}
+
+
+
+.page-footer__contacts-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// page-footer__copyright-list
+
+.page-footer__copyright-list {
+  margin: 0;
+  padding: 14px 0 16px;
+  list-style: none;
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  //flex-wrap: wrap;
+  //justify-content: space-between;
+}
+
+.page-footer__copyright-item a {
+  display: block;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  font-weight: normal;
+}
+
+.page-footer__copyright-item--order {
+  padding-left: 4px;
+}
+
+.page-footer__copyright-item--privacy {
+  //padding-right: 29%;
+  grid-column: 3 / 5;
+}

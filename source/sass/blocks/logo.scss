@@ -1,0 +1,27 @@
+.logo {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  column-gap: 16px;
+}
+
+.logo p {
+  margin: 0;
+  font-family: $font-title;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+.logo span {
+  font-family: $font-logo;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: $gray;
+}
+
+.logo svg {
+  width: 52px;
+  height: 52px;
+  grid-row: span 2;
+}

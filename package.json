@@ -1,7 +1,7 @@
 {
   "name": "pcb",
   "version": "1.0.0",
-  "description": "Проект «Печатные платы» от HTML Academy",
+  "description": "Проект «Smart Device» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
