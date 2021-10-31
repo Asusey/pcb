@@ -2,6 +2,7 @@
   min-width: 320px;
   height: 100%;
   font-family: $font-main;
+  font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   scroll-behavior: smooth;
@@ -14,11 +15,4 @@
   position: relative;
   display: grid;
   grid-template-rows: auto 1fr auto;
-}
-
-
-
-
-.page-main {
-  background-color: lightblue;
 }

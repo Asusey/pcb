@@ -1,0 +1,83 @@
+.description__wrapper {
+  margin: 0 auto;
+}
+
+@media (min-width: $min-desktop-whidth) {
+  .description {
+    background-image: url("../img/polygon-ellipse-left.svg"),
+      url("../img/polygon-ellipse-right.svg"), url("../img/polygon-left.svg"),
+      url("../img/polygon-right.svg");
+    background-position: -28.5% 154%, 53.5% 51.5%, 12% 5%, 98.5% 51%;
+    background-repeat: no-repeat;
+  }
+
+  .description__wrapper {
+    max-width: 1175px;
+    padding-top: 111px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .description__box {
+    background-image: url("../img/desktop-2005.webp");
+    background-repeat: no-repeat;
+    background-position: -3% 103%;
+    padding-left: 187px;
+    padding-top: 100px;
+    padding-bottom: 10px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/desktop-2005@2x.webp");
+      background-size: 220px 317px;
+    }
+  }
+}
+
+@media screen and (min-width: $min-tablet-whidth) and (max-width: $max-tablet-whidth) {
+  .description {
+    background-image: url("../../img/polygon-ellipse-right.svg");
+    background-size: 636px 640px;
+    background-repeat: no-repeat;
+    background-position: 214% 65%;
+  }
+
+  .description__wrapper {
+    margin-top: 54px;
+    padding-left: 24px;
+    padding-right: 23px;
+  }
+
+  .description__box {
+    background-image: url("../img/tablet-2005.webp");
+    background-repeat: no-repeat;
+    background-position: -5% 93%;
+    padding-left: 187px;
+    padding-top: 56px;
+    padding-bottom: 10px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet-2005@2x.webp");
+      background-size: 244px 362px;
+    }
+  }
+}
+
+@media screen and (min-width: $min-mobile-whidth) and (max-width: $max-mobile-whidth) {
+  .description {
+    background-image: url("../../img/polygon-ellipse-right.svg");
+    background-size: 636px 640px;
+    background-repeat: no-repeat;
+    background-position: 14% 72%;
+  }
+
+  .description__wrapper {
+    margin-top: 37px;
+    padding-left: 14px;
+    padding-right: 16px;
+    padding-bottom: 64px;
+  }
+
+  .description__box {
+    margin-top: 57px;
+  }
+}

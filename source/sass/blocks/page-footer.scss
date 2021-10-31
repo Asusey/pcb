@@ -15,13 +15,13 @@
 
 .page-footer__wrapper {
   margin: 0 auto;
-
+justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
   max-width: 1445px;
   min-height: 320px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 250px 1fr 357px;
   grid-template-rows: 1fr 1fr min-content;
 }
 
@@ -29,6 +29,7 @@
 
 .page-footer__logo {
   margin-top: 66px;
+  margin-right: 20px;
   padding-left: 13px;
   max-height: 52px;
 }
@@ -55,7 +56,7 @@
   grid-column: 2 / 3;
   grid-row: 1 / 3;
   margin-top: 56px;
-  margin-right: 20px;
+  padding-right: 20px;
 }
 
 .page-footer__site-sections h2 {
@@ -69,16 +70,15 @@
   padding: 0;
   list-style: none;
 
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-height: 124px;
+  display: grid;
+  grid-template-columns: 270px 184px;
+
 }
 
 .page-footer__site-sections-item {
 
-  page-break-inside: avoid;
-  break-inside: avoid;
+  page-break-inside: auto;
+  //break-inside: avoid;
 }
 
 .page-footer__site-sections-item a {
@@ -114,7 +114,7 @@
   grid-column: 1 / 4;
   grid-row: 3 / 4;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 0.8fr 1fr 1fr 0.5fr 1fr;
   //flex-wrap: wrap;
   //justify-content: space-between;
 }
@@ -129,7 +129,7 @@
 }
 
 .page-footer__copyright-item--order {
-  padding-left: 4px;
+  padding-left: 15px;
 }
 
 .page-footer__copyright-item--privacy {

@@ -25,3 +25,10 @@
   height: 52px;
   grid-row: span 2;
 }
+
+@media screen and (min-width: $min-mobile-whidth) and (max-width: $max-mobile-whidth) {
+  .logo svg {
+    width: 38px;
+    height: 38px;
+  }
+}

@@ -44,6 +44,11 @@
   background-color: $blue;
   text-align: center;
   border-radius: 5px;
+
+  &:hover {
+    color: $blue;
+    background-color: $white;
+  }
 }
 
 .intro__button-description {
