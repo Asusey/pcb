@@ -5,17 +5,16 @@
 @media (min-width: $min-desktop-whidth) {
   .description {
     background-image: url("../img/polygon-ellipse-left.svg"),
-      url("../img/polygon-ellipse-right.svg"), url("../img/polygon-left.svg"),
+      url("../img/polygon-ellipse-right.svg"),
+      url("../img/polygon-left.svg"),
       url("../img/polygon-right.svg");
-    background-position: -28.5% 154%, 53.5% 51.5%, 12% 5%, 98.5% 51%;
+      background-position: -28.5% 114%,53.5% 37.5%,12% 5%,98.5% 46%;
     background-repeat: no-repeat;
   }
 
   .description__wrapper {
     max-width: 1175px;
-    padding-top: 111px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 111px 10px 99px;
   }
 
   .description__box {
@@ -38,13 +37,14 @@
     background-image: url("../../img/polygon-ellipse-right.svg");
     background-size: 636px 640px;
     background-repeat: no-repeat;
-    background-position: 214% 65%;
+    background-position: 214% 54%;
   }
 
   .description__wrapper {
     margin-top: 54px;
     padding-left: 24px;
     padding-right: 23px;
+    padding-bottom: 73px;
   }
 
   .description__box {

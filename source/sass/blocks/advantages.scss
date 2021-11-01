@@ -70,12 +70,10 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 29px;
     row-gap: 30px;
-    //max-width: 720px;
     margin: 0 auto;
   }
 
   .advantages__item {
-    //margin-bottom: 30px;
     padding-top: 24px;
     padding-left: 26px;
     min-width: 315px;
@@ -157,7 +155,7 @@
   }
 
   .advantages__item--privacy p {
-     margin-top: 15px;
+    margin-top: 15px;
   }
 
   .advantages__item--cost {
