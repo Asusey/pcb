@@ -23,7 +23,7 @@
   position: relative;
 
   &:hover {
-    background-color: $dark-gray;
+    background-color: $hover-black;
   }
 
   &:hover h3 {
@@ -87,7 +87,7 @@
 @media screen and (min-width: $min-desktop-whidth) {
   .catalog__wrapper {
     max-width: 1170px;
-    padding: 87px 10px 120px;
+    padding: 87px 10px 127px;
   }
 
   .catalog__list {
