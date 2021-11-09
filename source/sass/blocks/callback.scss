@@ -7,14 +7,14 @@
   display: flex;
 }
 
-.callback h2 {
+.callback__inner h3 {
   margin: 0;
   font-family: $font-title;
   font-weight: normal;
   color: $white;
 }
 
-.callback p {
+.callback__inner p {
   margin: 0;
   font-weight: normal;
   color: $white;
@@ -32,11 +32,16 @@
 .callback__list-input input,
 .callback textarea {
   background: transparent;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: $callback-white;
   border: none;
   padding-top: 14px;
   padding-left: 18px;
   padding-bottom: 18px;
+}
+
+.callback__list-input input:hover,
+.callback textarea:hover {
+  background-color: $callback-hover;
 }
 
 .callback__list-input input::placeholder,
@@ -66,6 +71,10 @@
   border-radius: 5px;
   border: 1px solid $white;
   text-align: center;
+
+  &:hover {
+    background-color: $callback-hover;
+  }
 }
 
 .callback__box input {
@@ -77,6 +86,10 @@
   width: 16px;
   height: 16px;
   box-shadow: 0 0 0 1px $white;
+
+  &:hover {
+    box-shadow: 0 0 0 1px $callback-hover;
+  }
 }
 
 .callback__box input:checked {
@@ -90,6 +103,10 @@
   font-size: 14px;
   line-height: 16px;
   color: $white;
+
+  &:hover {
+    color: $callback-hover;
+  }
 }
 
 @media screen and (min-width: $min-desktop-whidth) {
@@ -99,8 +116,7 @@
       url("../../img/polygon-left-plane.svg"),
       url("../../img/polygon-right-plane.svg");
     background-repeat: no-repeat;
-
-    background-position: 25% 42%,14% -204%,94% 19%,105% 83%;
+    background-position: 25% 42%, 14% -204%, 94% 19%, 105% 83%;
   }
 
   .callback__wrapper {
@@ -115,7 +131,7 @@
     padding-right: 10px;
   }
 
-  .callback h2 {
+  .callback h3 {
     font-size: 36px;
     line-height: 51px;
   }
@@ -167,7 +183,7 @@
     padding-bottom: 105px;
   }
 
-  .callback h2 {
+  .callback h3 {
     font-size: 32px;
     line-height: 45px;
   }
@@ -225,7 +241,7 @@
     padding-bottom: 42px;
   }
 
-  .callback h2 {
+  .callback h3 {
     font-size: 28px;
     line-height: 39px;
   }

@@ -66,13 +66,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.catalog__button svg {
-  stroke: $white;
-}
-
-.catalog__button {
   bottom: 0;
   right: 0;
   width: 63px;
@@ -80,6 +73,7 @@
 }
 
 .catalog__button svg {
+  stroke: $white;
   width: 6px;
   height: 9px;
 }
@@ -94,8 +88,6 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
   }
-
-
 
   .catalog h2 {
     font-weight: normal;

@@ -1,4 +1,4 @@
-.information h2 {
+.information h3 {
   font-family: $font-title;
   margin: 0;
   color: $text-gray;
@@ -23,7 +23,7 @@
 }
 
 @media (min-width: $min-desktop-whidth) {
-  .information h2 {
+  .information h3 {
     font-size: 36px;
     line-height: 51px;
     margin-bottom: 22px;
@@ -41,7 +41,7 @@
 }
 
 @media screen and (min-width: $min-tablet-whidth) and (max-width: $max-tablet-whidth) {
-  .information h2 {
+  .information h3 {
     font-size: 32px;
     line-height: 45px;
     margin-bottom: 22px;
@@ -60,14 +60,14 @@
 
   .information__text--providers {
     display: -webkit-box;
+    overflow: hidden;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
-    overflow: hidden;
   }
 }
 
 @media screen and (min-width: $min-mobile-whidth) and (max-width: $max-mobile-whidth) {
-  .information h2 {
+  .information h3 {
     font-weight: normal;
     font-size: 28px;
     line-height: 39px;
@@ -84,9 +84,9 @@
 
   .information__text--providers {
     display: -webkit-box;
+    overflow: hidden;
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
-    overflow: hidden;
     margin-bottom: 29px;
   }
 

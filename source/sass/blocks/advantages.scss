@@ -23,7 +23,7 @@
   background-color: $blue;
 }
 
-.advantages__item h2 {
+.advantages__item h3 {
   margin: 0;
   font-family: $font-title;
   font-weight: normal;
@@ -32,7 +32,7 @@
   color: $blue;
 }
 
-.advantages__item:hover h2 {
+.advantages__item:hover h3 {
   color: $white;
 }
 
@@ -54,7 +54,7 @@
     padding-left: 41px;
   }
 
-  .advantages__item h2 {
+  .advantages__item h3 {
     margin: 14px 0 0;
   }
 
@@ -97,7 +97,7 @@
     padding-bottom: 34px;
   }
 
-  .advantages__item h2 {
+  .advantages__item h3 {
     margin-top: 0;
   }
 
@@ -124,7 +124,7 @@
     padding-left: 25px;
   }
 
-  .advantages__item h2 {
+  .advantages__item h3 {
     margin-top: 5px;
     font-size: 20px;
     line-height: 28px;

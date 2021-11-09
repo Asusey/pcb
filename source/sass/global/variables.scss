@@ -7,6 +7,9 @@ $font-logo: "Roboto", "Arial", sans-serif;
 // Colors
 
 $white: #ffffff;
+$modal-black: rgba(0, 0, 0, 0.5);
+$callback-white: rgba(255, 255, 255, 0.2);
+$callback-hover: rgba(255, 255, 255, 0.3);
 $bg-black: #1b2d37;
 $hover-black: #121e25;
 $dark-gray: #203c42;
@@ -15,6 +18,7 @@ $gray: #788891;
 $border-gray: #ebebeb;
 $text-gray: #666666;
 $link-gray: rgba(11, 18, 22, 0.5);
+$footer-border-gray: #626962;
 $form-background: #40b9ff;
 
 // Viewports
