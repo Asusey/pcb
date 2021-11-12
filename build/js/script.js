@@ -51,40 +51,93 @@
     }
   });
 
+  // validation
+  var onValidate = function () {
+    var inputs = document.querySelectorAll('input[data-tel-input]');
+    inputs.forEach(function (input) {
+      input.addEventListener('keypress', function (evt) {
+        if (evt.keyCode < 47 || evt.keyCode > 57) {
+          evt.preventDefault();
+        }
+        if (input.value.length === 6) {
+          input.value += ')';
+        }
+      });
 
-  var input = document.getElementById('phone');
+      input.addEventListener('focus', function () {
+        if (input.value.length === 0) {
+          input.value = '+7(';
+          input.selectionStart = input.value.length;
+        }
+      });
 
-  input.addEventListener('keypress', function (evt) {
-    if (evt.keyCode < 47 || evt.keyCode > 57) {
-      evt.preventDefault();
-    }
-  });
+      input.addEventListener('click', function (evt) {
+        if (input.selectionStart < 3) {
+          input.selectionStart = input.value.length;
+        }
+        if (evt.key === 'Backspace' && input.value.length <= 3) {
+          evt.preventDefault();
+        }
+      });
 
-  input.addEventListener('focus', function () {
-    if (input.value.length === 0) {
-      input.value = '+7(';
-      input.selectionStart = input.value.length;
-    }
-  });
+      input.addEventListener('blur', function () {
+        if (input.value === '+7(') {
+          input.value = '';
+        }
+      });
 
-  input.addEventListener('click', function (evt) {
-    if (input.selectionStart < 3) {
-      input.selectionStart = input.value.length;
-    }
-    if (evt.key === 'Backspace' && input.value.length <= 3) {
-      evt.preventDefault();
-    }
-  });
+      input.addEventListener('keydown', function (evt) {
+        if (evt.key === 'Backspace' && input.value.length <= 0) {
+          evt.preventDefault();
+        }
+      });
+    });
+  }(onValidate);
 
-  input.addEventListener('blur', function () {
-    if (input.value === '+7(') {
-      input.value = '';
-    }
-  });
+  // accordion
 
-  input.addEventListener('keydown', function (evt) {
-    if (evt.key === 'Backspace' && input.value.length <= 0) {
-      evt.preventDefault();
+  document.addEventListener('DOMContentLoaded', function () {
+    var widthWind = document.querySelector('body').offsetWidth;
+    var sectionsToggle = document.querySelector('.page-footer__site-sections h2');
+    var siteSections = document.querySelector('.page-footer__site-sections');
+    var siteSectionsList = document.querySelector('.page-footer__site-sections-list');
+
+    if (widthWind <= 767) {
+      sectionsToggle.addEventListener('click', function () {
+        if (siteSections.classList.contains('page-footer__site-sections--closed' || 'page-footer__contacts--opened')) {
+          siteSections.classList.remove('page-footer__site-sections--closed');
+          siteSections.classList.add('page-footer__site-sections--opened');
+          siteSectionsList.style.display = 'block';
+
+          footerContacts.classList.remove('page-footer__contacts--opened');
+          footerContacts.classList.add('page-footer__contacts--closed');
+          footerContactsList.style.display = 'none';
+        } else {
+          siteSections.classList.remove('page-footer__site-sections--opened');
+          siteSections.classList.add('page-footer__site-sections--closed');
+          siteSectionsList.style.display = 'none';
+        }
+      });
+
+      var contactsToggle = document.querySelector('.page-footer__contacts h2');
+      var footerContacts = document.querySelector('.page-footer__contacts');
+      var footerContactsList = document.querySelector('.page-footer__contacts-list');
+
+      contactsToggle.addEventListener('click', function () {
+        if (footerContacts.classList.contains('page-footer__contacts--closed' || 'page-footer__site-sections--opened')) {
+          footerContacts.classList.remove('page-footer__contacts--closed');
+          footerContacts.classList.add('page-footer__contacts--opened');
+          footerContactsList.style.display = 'block';
+
+          siteSections.classList.remove('page-footer__site-sections--opened');
+          siteSections.classList.add('page-footer__site-sections--closed');
+          siteSectionsList.style.display = 'none';
+        } else {
+          footerContacts.classList.remove('page-footer__contacts--opened');
+          footerContacts.classList.add('page-footer__contacts--closed');
+          footerContactsList.style.display = 'none';
+        }
+      });
     }
   });
 })();

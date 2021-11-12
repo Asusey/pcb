@@ -59,10 +59,17 @@
   }
 
   .information__text--providers {
-    display: -webkit-box;
     overflow: hidden;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
+    position: relative;
+    line-height: 1.4em;
+    max-height: 5.6em;
+
+    &::before {
+      content: "…";
+      position: absolute;
+      right: 8px;
+      bottom: 3px;
+    }
   }
 }
 
@@ -83,11 +90,18 @@
   }
 
   .information__text--providers {
-    display: -webkit-box;
     overflow: hidden;
-    -webkit-line-clamp: 8;
-    -webkit-box-orient: vertical;
-    margin-bottom: 29px;
+    position: relative;
+    line-height: 1.4em;
+    max-height: 10.9em;
+    margin-bottom: 31px;
+
+    &::before {
+      content: "…";
+      position: absolute;
+      right: 76px;
+      bottom: -2px;
+    }
   }
 
   .information a {
